@@ -1,0 +1,60 @@
+.game {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.game-board{
+    border: 1px solid black;
+}
+
+.board-row:after {
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.square {
+    background: rgb(255, 255, 255);
+    border: 1px solid grey;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 34px;
+    margin-right: 1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 34px;
+}
+
+.square:hover {
+    background: rgba(88, 88, 231, 0.678);
+}
+
+.game-info {
+    margin-left: 20px;
+}
+
+.game-info button {
+    margin-top: 20px;
+    background-color: rgba(88, 88, 231, 0.678);
+}
+
+.game-info button:hover {
+    background-color: rgba(128, 119, 0, 0.74);
+}
+
+
+.winner {
+    color: blue;
+    font-size: large;
+    font-weight: bold;
+}
+
+.next-player {
+    font-weight: bold;
+}
